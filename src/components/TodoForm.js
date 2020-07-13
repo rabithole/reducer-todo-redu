@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 
 function AddToDoForm(props) {
-	// const [form, formReset] = useState('');
-	// const [newTodo, setNewToDo] = useState('');
-
-	const handleChanges = e => {
-		props.setNewToDo(e.target.value);
-		console.log(e.target.value)
-	}
 
 	return (
 		<div className="App">

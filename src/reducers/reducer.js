@@ -16,8 +16,7 @@ export function reducer(state, action) { // Action === dispatch
         ];
 
       case 'TOGGLE_COMPLETED':
-      // console.log("action object:", action, 'state:', state)
-      return  state.map(item => {
+        return  state.map(item => {
                   if(action.payload === item.id){
                     item.completed = !item.completed
                   }  
@@ -26,13 +25,9 @@ export function reducer(state, action) { // Action === dispatch
 
 
       case 'CLEAR_COMPLETED':
-      // console.log(state)
-      return state.filter(item => item.completed === false);
+        return state.filter(item => item.completed === false);
          
     default:
       return state;
   }
 }
-// Don't need to use the spread because map makes a new array. 
-
-// action is and object that contains dispatch with a type and payload key value pairs. 
