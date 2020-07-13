@@ -1,4 +1,3 @@
-// Sets initial state based on what is in local storage. 
 export const initialState = 
   !JSON.parse(localStorage.getItem('cart')) ? [] : JSON.parse(localStorage.getItem('cart'));
 
